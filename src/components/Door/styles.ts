@@ -9,16 +9,20 @@ export const DoorArea = styled.div`
   width: ${v.doorwidth};
   height: ${v.doorheight};
   margin: 5px;
+  
+
+  pointer-events: ${p => p.open ? 'none' : 'all'}
 `;
 export const DoorStructure = styled.div`
   display: flex;
+  flex-direction: column-reverse;
   flex-grow: 1;
-
+  width: 90%;
 
   border-left: 5px solid ${p=>(p.selected ? 'yellow' : 'brown')};
   border-top: 5px solid ${p=>(p.selected ? 'yellow' : 'brown')};
   border-right: 5px solid ${p=>(p.selected ? 'yellow' : 'brown')};
-  width: 90%;
+   background-color: black;
 `;
 export const Door = styled.div`
   display: flex;
