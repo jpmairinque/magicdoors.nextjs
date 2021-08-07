@@ -20,5 +20,4 @@ export const ButtonsWrapper = styled.div`
 
    display: flex;
    flex-wrap: wrap;
-
 `
