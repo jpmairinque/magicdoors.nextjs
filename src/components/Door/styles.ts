@@ -9,8 +9,6 @@ export const DoorArea = styled.div`
   width: ${v.doorwidth};
   height: ${v.doorheight};
   margin: 5px;
-  
-
   pointer-events: ${p => p.open ? 'none' : 'all'}
 `;
 export const DoorStructure = styled.div`

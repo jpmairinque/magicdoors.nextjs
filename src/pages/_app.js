@@ -1,10 +1,14 @@
 import GlobalStyles from "../styles/global"
+import Head from 'next/head';
 
 function MyApp({ Component, pageProps }) {
   return (
     <>
-  <Component {...pageProps} />
-  <GlobalStyles/>
+      <Head>
+        <title>Magic Doors</title>
+      </Head>
+      <Component {...pageProps} />
+      <GlobalStyles/>
     </>
   )
 
