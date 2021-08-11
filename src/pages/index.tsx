@@ -1,12 +1,29 @@
 import Card from "../components/Card/Card";
 import * as S from "../styles/pagestyles/formpage";
 import NumberInput from "../components/NumberInput/NumberInput";
+import {AiOutlineClose} from 'react-icons/ai'
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Form() {
+
+  const [errorMsg, setErrorMsg] = useState<string>("")
+  const [validNum, setValidNum] = useState(false)
   const [doorAmnt, setDoorAmnt] = useState(3);
   const [prizeDoor, setPrizeDoor] = useState(1);
+
+  useEffect(()=>{
+    
+    if(doorAmnt<prizeDoor){
+      setErrorMsg("Prize door number can't be greater than the doors amount")
+      setValidNum(false)
+    } else {
+      setErrorMsg("")
+      setValidNum(true)
+    }   
+
+  },[prizeDoor,doorAmnt])
+
 
   return (
     <S.FormWrapper>
@@ -31,11 +48,12 @@ export default function Form() {
           />
         </Card>
         <Card bgcolor="#28a085">
-          <Link href={`/game/${doorAmnt}/${prizeDoor}`}>
+          {validNum ? <Link href={`/game/${doorAmnt}/${prizeDoor}`} passHref>
             <h2>Iniciar</h2>
-          </Link>
+          </Link> :  <h2><AiOutlineClose/></h2>}
         </Card>
       </div>
+      <h2>{errorMsg ? errorMsg : "Good game! =)"}</h2>
     </S.FormWrapper>
   );
 }

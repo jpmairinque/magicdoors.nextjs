@@ -25,17 +25,22 @@ width: 80%;
 button{
     padding: 1rem;
     border: none;
-    background-color: #fff6b;
+    background-color: #fff2b;
     color: black;
     font-size: 1rem;
     border-radius: 10px;
-    transition: 0.5s;
+    transition: 0.2s;
     cursor: pointer;
 
     &:hover{
         background-color: black;
         color: white;
 
+    }
+
+    &:disabled{
+        cursor: not-allowed;
+    
     }
 }
 

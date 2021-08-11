@@ -5,7 +5,7 @@ import * as S from "../../../styles/pagestyles/gamepage";
 import Link from "next/link"
 import {useRouter} from "next/router"
 
-const game = () => {
+const Game = () => {
 
   const router = useRouter()
   const [doorArr, setDoorArr] = useState([]);
@@ -20,7 +20,7 @@ const game = () => {
 
   const renderDoors = () => {
     return doorArr.map((door, key) => {
-      return <Door setDoorArr={setDoorArr} num={key} doorArr={doorArr} />;
+      return <Door setDoorArr={setDoorArr} key={key} num={key} doorArr={doorArr} />;
     });
   };
 
@@ -30,7 +30,7 @@ const game = () => {
             {renderDoors()}
         </S.DoorsWrapper>
         <S.ButtonsWrapper>
-           <Link href="/">
+           <Link href="/" passHref>
              <button>Restart</button>
            </Link>
         </S.ButtonsWrapper>
@@ -38,4 +38,4 @@ const game = () => {
       )
 };
 
-export default game;
+export default Game;
