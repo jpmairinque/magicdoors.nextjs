@@ -22,51 +22,30 @@ yarn run dev || npm run dev
 ```
 ## Project Structure / *estrutura do projeto* 🌳
 ```
-├───App.jsx
-├───index.jsx
-├───routes.jsx // rotas do app
-│
-├───assets // imagens
-|
 ├───components // componentes utilizados
-│   ├───ArtCard
-│   ├───ArtsList
-│   ├───Loading
-│   └───NavBar
+│   ├───Card
+│   ├───Door
+│   ├───Gift
+│   └───NumberInput
 │
-├───contexts // contextos utilizados
-│       AuthContext.jsx
-│       FavoritesContext.jsx
+├───pages // páginas e arquivos raízes
+│   ├───api
+│   └───game/[doors]/[prizeDoor] 
 │
-├───pages // páginas do app
-│   ├───Favorites
-│   ├───Home
-│   └───Login
-│
-├───services // conexões externas
-│       firebase.js
-│       museumapi.js
+├───helpers // funcões auxiliares
+│   └───doors.ts
 │
 └───styles // styled components global style
 
 ``` 
 ## Tools used / *ferramentas utilizadas* 🛠
-- React JS
+- Next JS
 - Styled Components
-- Context API
-- Router DOM
-- Firebase Auth
-- Firebase Realtime Database
-- Figma (design tool)
+- Typescript
+- Next Router 
+- React Icons
 
-## Designed UI's / *interfaces e designs* 🎨
-### - Presenting landing page
-![artbloomlanding](https://user-images.githubusercontent.com/53411709/125349276-b980df00-e333-11eb-9468-00c911eabd50.png)
-##
-### - Home Page & Login Page
-![artbloomhome](https://user-images.githubusercontent.com/53411709/125350174-c5b96c00-e334-11eb-9278-44d98a77e403.png)
 ## 
-![artbloomlogin](https://user-images.githubusercontent.com/53411709/125350185-ca7e2000-e334-11eb-88f6-d10d097ee0c8.png)
-
+*Thanks to [cod3r](https://www.cod3r.com.br/) Next JS course that teached me how to build this application =)*
 
 
