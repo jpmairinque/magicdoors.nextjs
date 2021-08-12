@@ -40,6 +40,7 @@ yarn run dev || npm run dev
 ``` 
 ## Tools used / *ferramentas utilizadas* 🛠
 - Next JS
+- Typescript
 - Styled Components
 - Typescript
 - Next Router 
