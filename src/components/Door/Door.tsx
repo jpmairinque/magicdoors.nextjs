@@ -1,16 +1,13 @@
 import * as S from "./styles";
 import Gift from "../Gift/Gift";
-import { useState } from "react";
 
 const Door = ({ setDoorArr, doorArr, num }) => {
-
     interface IDoor{
       isSelected: boolean
       isOpen: boolean
       gotGift: boolean
       number: number
     }
-
 
   const toggleSelect = () => {
 
@@ -55,6 +52,7 @@ const Door = ({ setDoorArr, doorArr, num }) => {
       </S.Door>
     );
   };
+
   return (
     <S.DoorArea open={doorArr[num].isOpen} onClick={toggleSelect}>
       <S.DoorStructure selected={doorArr[num].isSelected}>

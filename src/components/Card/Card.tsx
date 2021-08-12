@@ -1,11 +1,8 @@
-import React from 'react'
 import * as S from './styles'
-
 interface ICardProps{
     bgcolor?: string
     children?: any
 }
-
 
 const Card = (props: ICardProps) => {
     return (
