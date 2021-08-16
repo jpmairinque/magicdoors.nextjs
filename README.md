@@ -28,7 +28,7 @@ yarn run dev || npm run dev
 │   ├───Gift
 │   └───NumberInput
 │
-├───pages // páginas e arquivos raízes
+├───pages // páginas e arquivos raíz
 │   ├───api
 │   └───game/[doors]/[prizeDoor] 
 │
