@@ -47,6 +47,6 @@ yarn run dev || npm run dev
 - React Icons
 
 ## 
-*Thanks to [cod3r](https://www.cod3r.com.br/) Next JS course that teached me how to build this application =)*
+*Thanks to [cod3r](https://www.cod3r.com.br/)'s Next JS course that teached me how to build this application =)*
 
 
